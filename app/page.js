@@ -93,24 +93,6 @@ export default function Home() {
           // Save changes to DB
         };
 
-        useEffect(() => {
-          const handleKeyDown = (event) => {
-            if (event.key === 8 /* && event.target === blockRef.current */) {
-              console.log("delete")
-              const updatedArray = [...notes];
-              updatedArray.splice(index, index);
-              setNotes(updatedArray);
-            }
-          };
-      
-          document.addEventListener('keydown', handleKeyDown);
-      
-          return () => {
-            document.removeEventListener('keydown', handleKeyDown);
-          };
-        }, []);
-      
-  
         componentToRender = 
         <ContentEditable 
           ref={blockRef}
