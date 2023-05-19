@@ -1,0 +1,32 @@
+{
+  "name": "web-view",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@editorjs/editorjs": "^2.26.5",
+    "@uiw/react-md-editor": "^3.6.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "feather-icons-react": "^0.6.2",
+    "next": "13.4.2",
+    "next-remove-imports": "^1.0.11",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-contenteditable": "^3.3.7",
+    "react-dom": "18.2.0",
+    "react-editor-js": "^2.1.0",
+    "react-modern-drawer": "^1.2.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-typography": "^0.16.23",
+    "remark-gfm": "^3.0.1",
+    "tailwindcss": "3.3.2",
+    "typography": "^0.16.21"
+  }
+}

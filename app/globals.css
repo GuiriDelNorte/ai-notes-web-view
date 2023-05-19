@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blur:hover {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+
+.blur:hover {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+[contenteditable="true"]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #aaa;
+ }
+ 
+::placeholder {
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+color: rgb(156, 156, 156);
+opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+/* Internet Explorer 10-11 */
+color: rgb(156, 156, 156);
+}
+
+::-ms-input-placeholder {
+/* Microsoft Edge */
+color: rgb(156, 156, 156);
+}
