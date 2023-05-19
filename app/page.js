@@ -73,15 +73,16 @@ export default function Home() {
 
   const NoteComponent = ({ note, index }) => {
 
+    const content = useRef(note.text);
+    const blockRef = useRef();
+    const [noteText, setNoteText] = useState(note.text)
+
     let componentToRender;
   
     switch (note.type) {
   
       case 'text':
-        const content = useRef(note.text);
-        const blockRef = useRef();
-        const [noteText, setNoteText] = useState(note.text)
-  
+      
         const handleChange = evt => {
           content.current = evt.target.value;
           setNoteText(evt.target.value)
@@ -126,7 +127,7 @@ export default function Home() {
       // Other note types
   
       default:
-        componentToRender = <Text>Invalid note type</Text>;
+        componentToRender = <div>Invalid note type</div>;
     }
   
     return <div>{componentToRender}</div>;
